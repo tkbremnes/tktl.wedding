@@ -7,6 +7,7 @@ import "./styles.css";
 function PagePersoner() {
     return (
         <Page>
+            <h1>Nøkkelpersoner</h1>
             <p>Kommer snart</p>
             {/* Trond Kjetil Bremnes (bilde)
             Brudgommen

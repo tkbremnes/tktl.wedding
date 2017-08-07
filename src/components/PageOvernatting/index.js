@@ -7,6 +7,8 @@ import "./styles.css";
 function PageOvernatting() {
     return (
         <Page>
+            <h1>Overnatting</h1>
+
             <p>Vi har tatt kontakt med Quality Hotel Klubben i Tønsberg og laget en avtale med dem. De har reservert rom til våre gjester, som kan bestilles innen <strong>24. januar 2018</strong>.</p>
 
             <p>Prisen på disse rommene er:</p>

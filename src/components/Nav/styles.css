@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    height: var(--navbar-height);
+}
+
+nav a {
+    flex-grow: 1;
+    flex-shrink: 0;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    line-height: var(--navbar-height);
+
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

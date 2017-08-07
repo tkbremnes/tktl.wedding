@@ -7,6 +7,7 @@ import "./styles.css";
 function PageWishlist() {
     return (
         <Page>
+            <h1>Ønskeliste</h1>
             <p>
                 Mest av alt så ønsker vi at dere vil dele denne dagen med oss, og mange kommer langveisfra, det i seg selv er gave nok.
             </p>
