@@ -4,39 +4,49 @@ import countdown from "countdown";
 import "./styles.css";
 
 class Countdown extends Component {
-    componentDidMount() {
-        const date = new Date(2018, 1, 24, 16, 0);
+    componentWillMount() {
+        this._countdownEnd = new Date(2018, 1, 24, 16, 0);
 
-        countdown(date, (c) => {
-            document.querySelector("#days").innerText = c.days;
-            document.querySelector("#hours").innerText = c.hours;
-            document.querySelector("#minutes").innerText = c.minutes;
-            document.querySelector("#seconds").innerText = c.seconds;
+        this.setState({});
+    }
+
+    componentDidMount() {
+        this._countdown = countdown(this._countdownEnd, (c) => {
+            this.setState({
+                days: c.days,
+                hours: c.hours,
+                minutes: c.minutes,
+                seconds: c.seconds,
+            });
         }, countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
 
         window.requestAnimationFrame(() => {
-            document.querySelector('.Countdown').classList.add('visible');
+            this._countdownEl.classList.add('visible');
         });
-
     }
+
+    componentWillUnmount() {
+        global.clearInterval(this._countdown);
+    }
+
     render() {
         return (
-            <div className="Countdown">
+            <div className="Countdown" ref={(el) => {this._countdownEl = el}}>
                 <h3>
                     <div className="countdown-digit">
-                        <div className="number" id="days"></div>
+                        <div className="number">{ this.state.days }</div>
                         <div className="type"> dager</div>
                     </div>
                     <div className="countdown-digit">
-                        <div className="number" id="hours"></div>
+                        <div className="number">{ this.state.hours }</div>
                         <div className="type"> timer</div>
                     </div>
                     <div className="countdown-digit">
-                        <div className="number" id="minutes"></div>
+                        <div className="number">{ this.state.minutes }</div>
                         <div className="type"> minutter</div>
                     </div>
                     <div className="countdown-digit">
-                        <div className="number" id="seconds"></div>
+                        <div className="number">{ this.state.seconds }</div>
                         <div className="type"> sekunder</div>
                     </div>
                 </h3>
