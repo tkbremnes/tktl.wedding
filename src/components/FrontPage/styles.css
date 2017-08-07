@@ -1,0 +1,33 @@
+.FrontPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+.FrontPage .wrapper {
+  border: 2px solid #f7f7f7;
+  max-width: 400px;
+  padding: 34px 0;
+}
+
+.FrontPage .redacted {
+    display: none;
+}
+
+.FrontPage .names {
+    margin: 1em;
+}
+.FrontPage .names h1 {
+    font-size: 48px;
+    margin: 0;
+    line-height: 1.4em;
+}
+
+@media (min-width: 420px) {
+  .FrontPage .wrapper {
+    width: 400px;
+  }
+}
