@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
-function Page() {
+function Page({children}) {
     return (
         <article className="Page">
-            { this.props.children }
+            { children }
         </article>
     )
 }
