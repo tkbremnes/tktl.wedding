@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="218px" height="218px" viewBox="0 0 218 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>alt1 v2.icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="30.8282105" y="30.8282105" width="145.889827" height="145.889827" rx="7"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="145.889827" height="145.889827" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-4" x="41.0967171" y="41.119318" width="125.89697" height="125.89697"></rect>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="125.89697" height="125.89697" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+    </defs>
+    <g id="Monogram-final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="alt1-v2.icon" transform="translate(5.000000, 5.000000)">
+            <g id="Rectangle-3" transform="translate(103.773124, 103.773124) rotate(45.000000) translate(-103.773124, -103.773124) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use stroke="#979797" mask="url(#mask-3)" stroke-width="0.800000012" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <use id="Rectangle" stroke="#000000" mask="url(#mask-5)" stroke-width="10" transform="translate(104.045202, 104.067803) rotate(45.000000) translate(-104.045202, -104.067803) " xlink:href="#path-4"></use>
+            <text id="T" font-family="NotoSerif, Noto Serif" font-size="132" font-weight="normal" fill="#000000">
+                <tspan x="63.600866" y="158">T</tspan>
+            </text>
+            <text id="K" font-family="NotoSerif-Bold, Noto Serif" font-size="50" font-weight="bold" line-spacing="28" fill="#000000">
+                <tspan x="120" y="156">K</tspan>
+            </text>
+            <text id="L" transform="translate(69.500000, 132.000000) scale(-1, 1) translate(-69.500000, -132.000000) " font-family="NotoSerif-Bold, Noto Serif" font-size="50" font-weight="bold" line-spacing="28" fill="#000000">
+                <tspan x="53" y="157">L</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
