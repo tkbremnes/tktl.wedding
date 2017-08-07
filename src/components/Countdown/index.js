@@ -15,13 +15,13 @@ class Countdown extends Component {
         }, countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
 
         window.requestAnimationFrame(() => {
-            document.querySelector('.countdown-wrapper').classList.add('visible');
+            document.querySelector('.Countdown').classList.add('visible');
         });
 
     }
     render() {
         return (
-            <div className="countdown-wrapper">
+            <div className="Countdown">
                 <h3>
                     <div className="countdown-digit">
                         <div className="number" id="days"></div>
