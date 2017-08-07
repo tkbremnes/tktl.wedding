@@ -1,12 +1,13 @@
-nav {
+.Nav {
     display: flex;
     width: 100vw;
     position: absolute;
     top: 0;
     height: var(--navbar-height);
+    font-size: .8em;
 }
 
-nav a {
+.Nav a {
     flex-grow: 1;
     flex-shrink: 0;
     color: #f7f7f7;
@@ -14,10 +15,15 @@ nav a {
     display: block;
     text-align: center;
     line-height: var(--navbar-height);
-
     text-decoration: none;
 }
 
-nav a:hover {
+.Nav a:hover {
     text-decoration: underline;
+}
+
+@media (min-width: 660px) {
+    .Nav {
+        font-size: 1em;
+    }
 }
