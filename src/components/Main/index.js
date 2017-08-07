@@ -6,10 +6,12 @@ import {
 
 import FrontPage from "../FrontPage";
 import Nav from "../Nav";
-import PageVielsen from "../PageVielsen";
+import PageBryllupet from "../PageBryllupet";
+import PageOvernatting from "../PageOvernatting";
+import PagePersoner from "../PagePersoner";
+import PageWishlist from "../PageWishlist";
 
 import "./styles.css";
-
 
 function Main() {
     return (
@@ -18,7 +20,10 @@ function Main() {
                 <Nav />
 
                 <Route exact path="/" component={FrontPage}/>
-                <Route exact path="/vielse" component={PageVielsen}/>
+                <Route exact path="/bryllupet" component={PageBryllupet}/>
+                <Route exact path="/overnatting" component={PageOvernatting}/>
+                <Route exact path="/nøkkelpersoner" component={PagePersoner}/>
+                <Route exact path="/ønskeliste" component={PageWishlist}/>
             </div>
         </Router>
     )
