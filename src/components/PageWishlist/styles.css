@@ -1,0 +1,12 @@
+.WishList-digital {
+    margin-top: 2em;
+}
+
+
+.WishList-digital li,
+.WishList-digital ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+

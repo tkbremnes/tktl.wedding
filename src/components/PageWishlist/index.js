@@ -16,9 +16,15 @@ function PageWishlist() {
                 Men hvis noen ønsker å gi, så vil vi sette stor pris på bidrag til vår bryllupsreise. Eventuelle pengegaver kan settes inn på konto <strong>1208.11.35205</strong> eller gis i kontanter.
             </p>
 
-            <p>
-                Vi har også laget en digital ønskeliste. Denne vil du finne her så snart den er klar.
-            </p>
+            <section className="WishList-digital">
+                <h2>Digitale ønskelister</h2>
+                <p>Vi har også laget oss digitale ønskelister. Disse finner du her:</p>
+
+                <ul>
+                    <li><a href="https://www.minegavelister.no/243529?authkey=f97c0c51-49ed-4e11-a465-cd1b01d1bbc1">Mine Gavelister</a></li>
+                    <li><a href="https://www.kitchn.no/bryllup/vis-liste/?WishListId=87346">Kitchn</a></li>
+                </ul>
+            </section>
         </Page>
     )
 }
